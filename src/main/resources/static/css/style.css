@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #d8b4f8, #bde0fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3b315f;
+}
+
+/* Card utama untuk login, register, dan home */
+.container {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 35px 32px;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(91, 76, 130, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+/* Judul halaman */
+h1 {
+    margin-bottom: 25px;
+    font-size: 32px;
+    color: #6d5dfc;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    margin-bottom: 22px;
+    font-size: 28px;
+    color: #6d5dfc;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #d8b4f8;
+    border-radius: 14px;
+    outline: none;
+    font-size: 15px;
+    background-color: #fdfcff;
+    color: #3b315f;
+    transition: 0.3s ease;
+}
+
+input::placeholder {
+    color: #9b8cc4;
+}
+
+input:focus {
+    border-color: #8ecae6;
+    box-shadow: 0 0 0 4px rgba(142, 202, 230, 0.25);
+}
+
+/* Button */
+button {
+    margin-top: 8px;
+    padding: 14px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #9b5de5, #70d6ff);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(155, 93, 229, 0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Text */
+p {
+    margin-top: 18px;
+    font-size: 15px;
+    color: #5c5470;
+}
+
+/* Link */
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #6d5dfc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #3a86ff;
+    text-decoration: underline;
+}
+
+/* Tampilan data di home */
+.profile-card {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.profile-card p {
+    background-color: #f4efff;
+    padding: 14px 16px;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    border-left: 5px solid #9b5de5;
+}
+
+.profile-card span {
+    font-weight: 600;
+    color: #3b315f;
+}
+
+/* Link logout */
+.logout-link {
+    margin-top: 22px;
+    padding: 12px 24px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #ffafcc, #bde0fe);
+    color: #3b315f;
+    font-weight: 700;
+}
+
+.logout-link:hover {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #ff7eb6, #70d6ff);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 28px 22px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
